@@ -27,12 +27,12 @@ if ( $_REQUEST['submit'] ) {
 	<hr />
 	<p><b>Note:</b> Unless otherwise listed, the below values are the frequencies of the respective values.</p>
 	<hr />
-	<p>p (dominant alleles) is <b><?php printf ( "%0.4f" , $p ); ?></b>.</p>
-	<p>p&sup2; (homozygous dominant) is <b><?php printf ( "%0.4f" , $p2 ); ?></b>.</p>
-	<p>q (recessive alleles) is <b><?php printf ( "%0.4f" , $q ); ?></b>.</p>
-	<p>q&sup2; (homozygous recessive) is <b><?php printf ( "%0.4f" , $q2 ); ?></b>.</p>
-	<p>2pq (heterozygous) is <b><?php printf ( "%0.4f" , $tpq ); ?></b>.</p>
-	<p>Heterozygous and homozygous recessive combined is <b><?php printf ( "%0.4f" , $tpq + $q2 ); ?></b>.</p>
+	<p>p (dominant alleles) is <b><?php printf ( "%0.4f" , $p ); ?> / <?php printf ( "%0.2f" , $p * 100 );?>%</b>.</p>
+	<p>p&sup2; (homozygous dominant) is <b><?php printf ( "%0.4f" , $p2 ); ?> / <?php printf ( "%0.2f" , $p2 * 100 );?>%</b>.</p>
+	<p>q (recessive alleles) is <b><?php printf ( "%0.4f" , $q ); ?> / <?php printf ( "%0.2f" , $q * 100 );?>%</b>.</p>
+	<p>q&sup2; (homozygous recessive) is <b><?php printf ( "%0.4f" , $q2 ); ?> / <?php printf ( "%0.2f" , $q2 * 100 );?>%</b>.</p>
+	<p>2pq (heterozygous) is <b><?php printf ( "%0.4f" , $tpq ); ?> / <?php printf ( "%0.2f" , $tpq * 100 );?>%</b>.</p>
+	<p>Heterozygous and homozygous recessive combined is <b><?php printf ( "%0.4f" , $tpq + $q2 ); ?>< / <?php printf ( "%0.2f" , ( $tpq + $q2 ) * 100 );?>%</b>.</p>
 	<?php
 } else {
 	?>

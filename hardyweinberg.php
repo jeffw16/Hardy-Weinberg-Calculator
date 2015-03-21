@@ -16,6 +16,11 @@
 		<div class="container">
 <?php
 if ( $_REQUEST['submit'] ) {
+	// failsafes
+	if ( $_REQUEST['q2'] > 1 || $_REQUEST['q2'] < 0 ) {
+		echo "<p>ERROR: Frequency must be between 0 and 1. The following information is inaccurate.</p><hr />";
+	}
+	// do some Hardy-Weinberg math ;)
 	$q2 = $_REQUEST['q2'];
 	$q = sqrt ( $q2 );
 	$p = ( 1 - $q );

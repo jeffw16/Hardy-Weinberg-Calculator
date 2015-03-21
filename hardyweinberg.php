@@ -37,6 +37,7 @@ if ( $_REQUEST['submit'] ) {
 	<p>q (recessive alleles) is <b><?php printf ( "%0.4f" , $q ); ?> / <?php printf ( "%0.2f" , $q * 100 );?>%</b>.</p>
 	<p>q&sup2; (homozygous recessive) is <b><?php printf ( "%0.4f" , $q2 ); ?> / <?php printf ( "%0.2f" , $q2 * 100 );?>%</b>.</p>
 	<p>2pq (heterozygous) is <b><?php printf ( "%0.4f" , $tpq ); ?> / <?php printf ( "%0.2f" , $tpq * 100 );?>%</b>.</p>
+	<p>Heterozygous and homozygous dominant combined is <b><?php printf ( "%0.4f" , $tpq + $p2 ); ?> / <?php printf ( "%0.2f" , ( $tpq + $p2 ) * 100 );?>%</b>.</p>
 	<p>Heterozygous and homozygous recessive combined is <b><?php printf ( "%0.4f" , $tpq + $q2 ); ?> / <?php printf ( "%0.2f" , ( $tpq + $q2 ) * 100 );?>%</b>.</p>
 	<?php
 } else {
